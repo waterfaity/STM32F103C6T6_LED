@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"c6t6_led\startup_stm32f103x6.o"
+"c6t6_led\main.o"
+"c6t6_led\gpio.o"
+"c6t6_led\stm32f1xx_it.o"
+"c6t6_led\stm32f1xx_hal_msp.o"
+"c6t6_led\stm32f1xx_hal_gpio_ex.o"
+"c6t6_led\stm32f1xx_hal_tim.o"
+"c6t6_led\stm32f1xx_hal_tim_ex.o"
+"c6t6_led\stm32f1xx_hal.o"
+"c6t6_led\stm32f1xx_hal_rcc.o"
+"c6t6_led\stm32f1xx_hal_rcc_ex.o"
+"c6t6_led\stm32f1xx_hal_gpio.o"
+"c6t6_led\stm32f1xx_hal_dma.o"
+"c6t6_led\stm32f1xx_hal_cortex.o"
+"c6t6_led\stm32f1xx_hal_pwr.o"
+"c6t6_led\stm32f1xx_hal_flash.o"
+"c6t6_led\stm32f1xx_hal_flash_ex.o"
+"c6t6_led\stm32f1xx_hal_exti.o"
+"c6t6_led\system_stm32f1xx.o"
+--strict --scatter "C6T6_LED\C6T6_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "C6T6_LED.map" -o C6T6_LED\C6T6_LED.axf
